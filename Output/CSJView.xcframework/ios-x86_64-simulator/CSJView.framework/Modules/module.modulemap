@@ -1,0 +1,4 @@
+framework module CSJView {
+  header "CSJView-Swift.h"
+  requires objc
+}

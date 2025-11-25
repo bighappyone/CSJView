@@ -1,0 +1,132 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CSJView
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import BUAdSDK
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol AnalyticsInterface {
+  func initConfig(_ key: Swift.String?)
+  func event(_ event: Swift.String)
+  func event(_ event: Swift.String, _ params: [Swift.String : Any])
+}
+@_hasMissingDesignatedInitializers public class ThirdAnalytics {
+  @_Concurrency.MainActor public static var provider: (any CSJView.AnalyticsInterface)?
+  @_Concurrency.MainActor public static func initConfig(_ key: Swift.String?)
+  @_Concurrency.MainActor public static func event(_ event: Swift.String)
+  @_Concurrency.MainActor public static func event(_ event: Swift.String, _ params: [Swift.String : Any])
+  @objc deinit
+}
+public struct AdConfig : Swift.Codable {
+  public let umKey: Swift.String?
+  public let bId: Swift.String?
+  public let appId: Swift.String
+  public let rewardSlotId: [Swift.String]
+  public let splashSlotId: [Swift.String]
+  public let interstitialSlotId: [Swift.String]
+  public let isEnable: Swift.Bool
+  public let cacheLength: Swift.Int
+  public let flows: [CSJView.FlowItem]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AdData : CSJView.FlowData {
+  public let times: Swift.Int
+  public let message: [CSJView.AdMessage]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AdMessage : Swift.Codable {
+  public let title: Swift.String
+  public let message: Swift.String
+  public let cancel: Swift.String
+  public let confirm: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DemoData : CSJView.FlowData {
+  public let detail: Swift.String
+  public let image: Swift.String
+  public let name: Swift.String
+  public let desc: Swift.String
+  public let cancel: Swift.String
+  public let confirm: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EvaluateData : CSJView.FlowData {
+  public let url: Swift.String
+  public let message: Swift.String
+  public let button: Swift.String
+  public let result: Swift.Int
+  public let image: Swift.String?
+  public let link: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol FlowData : Swift.Decodable, Swift.Encodable {
+}
+public struct FlowItem : Swift.Codable {
+  public let type: Swift.String
+  public let data: Swift.String
+  public var parsedData: (any CSJView.FlowData)? {
+    get
+  }
+  public var flowType: CSJView.FlowType {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum FlowType : Swift.String {
+  case evaluate
+  case message
+  case ad
+  case task
+  case jump
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct JumpData : CSJView.FlowData {
+  public let link: Swift.String
+  public let isLock: Swift.Bool
+  public let title: Swift.String
+  public let message: Swift.String
+  public let button: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageData : CSJView.FlowData {
+  public let title: Swift.String
+  public let message: Swift.String
+  public let cancel: Swift.String
+  public let confirm: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_Concurrency.MainActor @preconcurrency public struct AdShowView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(configUrl: Swift.String, onComplete: @escaping (Swift.Bool) -> Swift.Void, loadingView: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7CSJView10AdShowViewV4bodyQrvp", 0) __<Content>
+}
+public struct CSJView {
+  public static let version: Swift.String
+  public static let name: Swift.String
+  public static let description: Swift.String
+  public static func getFrameworkInfo() -> [Swift.String : Any]
+}
+extension CSJView.FlowType : Swift.Equatable {}
+extension CSJView.FlowType : Swift.Hashable {}
+extension CSJView.FlowType : Swift.RawRepresentable {}
+extension CSJView.AdShowView : Swift.Sendable {}

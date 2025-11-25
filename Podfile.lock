@@ -1,0 +1,59 @@
+PODS:
+  - Ads-CN (7.2.1.0):
+    - Ads-CN/BUAdLive-Framework (= 7.2.1.0)
+    - Ads-CN/BUAdSDK (= 7.2.1.0)
+  - Ads-CN/BUAdLive (7.2.1.0)
+  - Ads-CN/BUAdLive-Framework (7.2.1.0):
+    - Ads-CN/BUAdLive
+    - BUTTSDKFramework/LivePull-Lite (= 1.46.2.7-premium)
+  - Ads-CN/BUAdSDK (7.2.1.0)
+  - BUTTSDKFramework/Core (1.46.2.7-premium)
+  - BUTTSDKFramework/LiveBase (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Base
+    - BUTTSDKFramework/PlayerCore/LiveLite
+  - BUTTSDKFramework/LivePull-Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Lite
+  - BUTTSDKFramework/PlayerCore/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/PlayerCore/LiveLite (1.46.2.7-premium):
+    - BUTTSDKFramework/PlayerCore/Base
+    - BUTTSDKFramework/TTFFmpeg/LiveLite
+  - BUTTSDKFramework/Reachability (1.46.2.7-premium)
+  - BUTTSDKFramework/SSL (1.46.2.7-premium)
+  - BUTTSDKFramework/Strategy/Core (1.46.2.7-premium):
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/Strategy/Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Core
+  - BUTTSDKFramework/Tools (1.46.2.7-premium):
+    - BUTTSDKFramework/SSL
+  - BUTTSDKFramework/TTFFmpeg/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/TTFFmpeg/LiveLite (1.46.2.7-premium):
+    - BUTTSDKFramework/TTFFmpeg/Base
+
+DEPENDENCIES:
+  - Ads-CN
+
+SPEC REPOS:
+  trunk:
+    - Ads-CN
+    - BUTTSDKFramework
+
+SPEC CHECKSUMS:
+  Ads-CN: d92a8153c4db60a5f195fe263da2e41de4e1d24c
+  BUTTSDKFramework: b5d45b40003335843f05088c2373cef0b5638a9e
+
+PODFILE CHECKSUM: d4c50fdc2419b983d14101bd9d32fc37f7c365db
+
+COCOAPODS: 1.16.2

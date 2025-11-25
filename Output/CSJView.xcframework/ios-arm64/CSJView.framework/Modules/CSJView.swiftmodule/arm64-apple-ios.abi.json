@@ -1,0 +1,4338 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "CSJView",
+    "printedName": "CSJView",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsInterface",
+        "printedName": "AnalyticsInterface",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initConfig",
+            "printedName": "initConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView18AnalyticsInterfaceP10initConfigyySSSgF",
+            "mangledName": "$s7CSJView18AnalyticsInterfaceP10initConfigyySSSgF",
+            "moduleName": "CSJView",
+            "genericSig": "<τ_0_0 where τ_0_0 : CSJView.AnalyticsInterface>",
+            "sugared_genericSig": "<Self where Self : CSJView.AnalyticsInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "event",
+            "printedName": "event(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView18AnalyticsInterfaceP5eventyySSF",
+            "mangledName": "$s7CSJView18AnalyticsInterfaceP5eventyySSF",
+            "moduleName": "CSJView",
+            "genericSig": "<τ_0_0 where τ_0_0 : CSJView.AnalyticsInterface>",
+            "sugared_genericSig": "<Self where Self : CSJView.AnalyticsInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "event",
+            "printedName": "event(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView18AnalyticsInterfaceP5eventyySS_SDySSypGtF",
+            "mangledName": "$s7CSJView18AnalyticsInterfaceP5eventyySS_SDySSypGtF",
+            "moduleName": "CSJView",
+            "genericSig": "<τ_0_0 where τ_0_0 : CSJView.AnalyticsInterface>",
+            "sugared_genericSig": "<Self where Self : CSJView.AnalyticsInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7CSJView18AnalyticsInterfaceP",
+        "mangledName": "$s7CSJView18AnalyticsInterfaceP",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ThirdAnalytics",
+        "printedName": "ThirdAnalytics",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "provider",
+            "printedName": "provider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any CSJView.AnalyticsInterface)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsInterface",
+                    "printedName": "any CSJView.AnalyticsInterface",
+                    "usr": "s:7CSJView18AnalyticsInterfaceP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvpZ",
+            "mangledName": "$s7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvpZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "Custom"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CSJView.AnalyticsInterface)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsInterface",
+                        "printedName": "any CSJView.AnalyticsInterface",
+                        "usr": "s:7CSJView18AnalyticsInterfaceP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvgZ",
+                "mangledName": "$s7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvgZ",
+                "moduleName": "CSJView",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CSJView.AnalyticsInterface)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsInterface",
+                        "printedName": "any CSJView.AnalyticsInterface",
+                        "usr": "s:7CSJView18AnalyticsInterfaceP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvsZ",
+                "mangledName": "$s7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvsZ",
+                "moduleName": "CSJView",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvMZ",
+                "mangledName": "$s7CSJView14ThirdAnalyticsC8providerAA0C9Interface_pSgvMZ",
+                "moduleName": "CSJView",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initConfig",
+            "printedName": "initConfig(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView14ThirdAnalyticsC10initConfigyySSSgFZ",
+            "mangledName": "$s7CSJView14ThirdAnalyticsC10initConfigyySSSgFZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "event",
+            "printedName": "event(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView14ThirdAnalyticsC5eventyySSFZ",
+            "mangledName": "$s7CSJView14ThirdAnalyticsC5eventyySSFZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "event",
+            "printedName": "event(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView14ThirdAnalyticsC5eventyySS_SDySSypGtFZ",
+            "mangledName": "$s7CSJView14ThirdAnalyticsC5eventyySS_SDySSypGtFZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7CSJView14ThirdAnalyticsC",
+        "mangledName": "$s7CSJView14ThirdAnalyticsC",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "BUAdSDK",
+        "printedName": "BUAdSDK",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "BUAdSDK",
+        "printedName": "BUAdSDK",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdConfig",
+        "printedName": "AdConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "umKey",
+            "printedName": "umKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV5umKeySSSgvp",
+            "mangledName": "$s7CSJView8AdConfigV5umKeySSSgvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV5umKeySSSgvg",
+                "mangledName": "$s7CSJView8AdConfigV5umKeySSSgvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bId",
+            "printedName": "bId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV3bIdSSSgvp",
+            "mangledName": "$s7CSJView8AdConfigV3bIdSSSgvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV3bIdSSSgvg",
+                "mangledName": "$s7CSJView8AdConfigV3bIdSSSgvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appId",
+            "printedName": "appId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV5appIdSSvp",
+            "mangledName": "$s7CSJView8AdConfigV5appIdSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV5appIdSSvg",
+                "mangledName": "$s7CSJView8AdConfigV5appIdSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rewardSlotId",
+            "printedName": "rewardSlotId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV12rewardSlotIdSaySSGvp",
+            "mangledName": "$s7CSJView8AdConfigV12rewardSlotIdSaySSGvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV12rewardSlotIdSaySSGvg",
+                "mangledName": "$s7CSJView8AdConfigV12rewardSlotIdSaySSGvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "splashSlotId",
+            "printedName": "splashSlotId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV12splashSlotIdSaySSGvp",
+            "mangledName": "$s7CSJView8AdConfigV12splashSlotIdSaySSGvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV12splashSlotIdSaySSGvg",
+                "mangledName": "$s7CSJView8AdConfigV12splashSlotIdSaySSGvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interstitialSlotId",
+            "printedName": "interstitialSlotId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV18interstitialSlotIdSaySSGvp",
+            "mangledName": "$s7CSJView8AdConfigV18interstitialSlotIdSaySSGvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV18interstitialSlotIdSaySSGvg",
+                "mangledName": "$s7CSJView8AdConfigV18interstitialSlotIdSaySSGvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEnable",
+            "printedName": "isEnable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV8isEnableSbvp",
+            "mangledName": "$s7CSJView8AdConfigV8isEnableSbvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV8isEnableSbvg",
+                "mangledName": "$s7CSJView8AdConfigV8isEnableSbvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cacheLength",
+            "printedName": "cacheLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV11cacheLengthSivp",
+            "mangledName": "$s7CSJView8AdConfigV11cacheLengthSivp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV11cacheLengthSivg",
+                "mangledName": "$s7CSJView8AdConfigV11cacheLengthSivg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flows",
+            "printedName": "flows",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CSJView.FlowItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowItem",
+                    "printedName": "CSJView.FlowItem",
+                    "usr": "s:7CSJView8FlowItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8AdConfigV5flowsSayAA8FlowItemVGvp",
+            "mangledName": "$s7CSJView8AdConfigV5flowsSayAA8FlowItemVGvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CSJView.FlowItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowItem",
+                        "printedName": "CSJView.FlowItem",
+                        "usr": "s:7CSJView8FlowItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8AdConfigV5flowsSayAA8FlowItemVGvg",
+                "mangledName": "$s7CSJView8AdConfigV5flowsSayAA8FlowItemVGvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdConfig",
+                "printedName": "CSJView.AdConfig",
+                "usr": "s:7CSJView8AdConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView8AdConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView8AdConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView8AdConfigV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView8AdConfigV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView8AdConfigV",
+        "mangledName": "$s7CSJView8AdConfigV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdData",
+        "printedName": "AdData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "times",
+            "printedName": "times",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView6AdDataV5timesSivp",
+            "mangledName": "$s7CSJView6AdDataV5timesSivp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView6AdDataV5timesSivg",
+                "mangledName": "$s7CSJView6AdDataV5timesSivg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CSJView.AdMessage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdMessage",
+                    "printedName": "CSJView.AdMessage",
+                    "usr": "s:7CSJView9AdMessageV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView6AdDataV7messageSayAA0B7MessageVGvp",
+            "mangledName": "$s7CSJView6AdDataV7messageSayAA0B7MessageVGvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CSJView.AdMessage]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdMessage",
+                        "printedName": "CSJView.AdMessage",
+                        "usr": "s:7CSJView9AdMessageV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView6AdDataV7messageSayAA0B7MessageVGvg",
+                "mangledName": "$s7CSJView6AdDataV7messageSayAA0B7MessageVGvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdData",
+                "printedName": "CSJView.AdData",
+                "usr": "s:7CSJView6AdDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView6AdDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView6AdDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView6AdDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView6AdDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView6AdDataV",
+        "mangledName": "$s7CSJView6AdDataV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FlowData",
+            "printedName": "FlowData",
+            "usr": "s:7CSJView8FlowDataP",
+            "mangledName": "$s7CSJView8FlowDataP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdMessage",
+        "printedName": "AdMessage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView9AdMessageV5titleSSvp",
+            "mangledName": "$s7CSJView9AdMessageV5titleSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView9AdMessageV5titleSSvg",
+                "mangledName": "$s7CSJView9AdMessageV5titleSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView9AdMessageV7messageSSvp",
+            "mangledName": "$s7CSJView9AdMessageV7messageSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView9AdMessageV7messageSSvg",
+                "mangledName": "$s7CSJView9AdMessageV7messageSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView9AdMessageV6cancelSSvp",
+            "mangledName": "$s7CSJView9AdMessageV6cancelSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView9AdMessageV6cancelSSvg",
+                "mangledName": "$s7CSJView9AdMessageV6cancelSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirm",
+            "printedName": "confirm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView9AdMessageV7confirmSSvp",
+            "mangledName": "$s7CSJView9AdMessageV7confirmSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView9AdMessageV7confirmSSvg",
+                "mangledName": "$s7CSJView9AdMessageV7confirmSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdMessage",
+                "printedName": "CSJView.AdMessage",
+                "usr": "s:7CSJView9AdMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView9AdMessageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView9AdMessageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView9AdMessageV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView9AdMessageV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView9AdMessageV",
+        "mangledName": "$s7CSJView9AdMessageV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DemoData",
+        "printedName": "DemoData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "detail",
+            "printedName": "detail",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8DemoDataV6detailSSvp",
+            "mangledName": "$s7CSJView8DemoDataV6detailSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8DemoDataV6detailSSvg",
+                "mangledName": "$s7CSJView8DemoDataV6detailSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8DemoDataV5imageSSvp",
+            "mangledName": "$s7CSJView8DemoDataV5imageSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8DemoDataV5imageSSvg",
+                "mangledName": "$s7CSJView8DemoDataV5imageSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8DemoDataV4nameSSvp",
+            "mangledName": "$s7CSJView8DemoDataV4nameSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8DemoDataV4nameSSvg",
+                "mangledName": "$s7CSJView8DemoDataV4nameSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "desc",
+            "printedName": "desc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8DemoDataV4descSSvp",
+            "mangledName": "$s7CSJView8DemoDataV4descSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8DemoDataV4descSSvg",
+                "mangledName": "$s7CSJView8DemoDataV4descSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8DemoDataV6cancelSSvp",
+            "mangledName": "$s7CSJView8DemoDataV6cancelSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8DemoDataV6cancelSSvg",
+                "mangledName": "$s7CSJView8DemoDataV6cancelSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirm",
+            "printedName": "confirm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8DemoDataV7confirmSSvp",
+            "mangledName": "$s7CSJView8DemoDataV7confirmSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8DemoDataV7confirmSSvg",
+                "mangledName": "$s7CSJView8DemoDataV7confirmSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DemoData",
+                "printedName": "CSJView.DemoData",
+                "usr": "s:7CSJView8DemoDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView8DemoDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView8DemoDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView8DemoDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView8DemoDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView8DemoDataV",
+        "mangledName": "$s7CSJView8DemoDataV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FlowData",
+            "printedName": "FlowData",
+            "usr": "s:7CSJView8FlowDataP",
+            "mangledName": "$s7CSJView8FlowDataP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EvaluateData",
+        "printedName": "EvaluateData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView12EvaluateDataV3urlSSvp",
+            "mangledName": "$s7CSJView12EvaluateDataV3urlSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView12EvaluateDataV3urlSSvg",
+                "mangledName": "$s7CSJView12EvaluateDataV3urlSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView12EvaluateDataV7messageSSvp",
+            "mangledName": "$s7CSJView12EvaluateDataV7messageSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView12EvaluateDataV7messageSSvg",
+                "mangledName": "$s7CSJView12EvaluateDataV7messageSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "button",
+            "printedName": "button",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView12EvaluateDataV6buttonSSvp",
+            "mangledName": "$s7CSJView12EvaluateDataV6buttonSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView12EvaluateDataV6buttonSSvg",
+                "mangledName": "$s7CSJView12EvaluateDataV6buttonSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView12EvaluateDataV6resultSivp",
+            "mangledName": "$s7CSJView12EvaluateDataV6resultSivp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView12EvaluateDataV6resultSivg",
+                "mangledName": "$s7CSJView12EvaluateDataV6resultSivg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView12EvaluateDataV5imageSSSgvp",
+            "mangledName": "$s7CSJView12EvaluateDataV5imageSSSgvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView12EvaluateDataV5imageSSSgvg",
+                "mangledName": "$s7CSJView12EvaluateDataV5imageSSSgvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "link",
+            "printedName": "link",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView12EvaluateDataV4linkSSSgvp",
+            "mangledName": "$s7CSJView12EvaluateDataV4linkSSSgvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView12EvaluateDataV4linkSSSgvg",
+                "mangledName": "$s7CSJView12EvaluateDataV4linkSSSgvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EvaluateData",
+                "printedName": "CSJView.EvaluateData",
+                "usr": "s:7CSJView12EvaluateDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView12EvaluateDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView12EvaluateDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView12EvaluateDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView12EvaluateDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView12EvaluateDataV",
+        "mangledName": "$s7CSJView12EvaluateDataV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FlowData",
+            "printedName": "FlowData",
+            "usr": "s:7CSJView8FlowDataP",
+            "mangledName": "$s7CSJView8FlowDataP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlowData",
+        "printedName": "FlowData",
+        "declKind": "Protocol",
+        "usr": "s:7CSJView8FlowDataP",
+        "mangledName": "$s7CSJView8FlowDataP",
+        "moduleName": "CSJView",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlowItem",
+        "printedName": "FlowItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8FlowItemV4typeSSvp",
+            "mangledName": "$s7CSJView8FlowItemV4typeSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8FlowItemV4typeSSvg",
+                "mangledName": "$s7CSJView8FlowItemV4typeSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8FlowItemV4dataSSvp",
+            "mangledName": "$s7CSJView8FlowItemV4dataSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8FlowItemV4dataSSvg",
+                "mangledName": "$s7CSJView8FlowItemV4dataSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parsedData",
+            "printedName": "parsedData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any CSJView.FlowData)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowData",
+                    "printedName": "any CSJView.FlowData",
+                    "usr": "s:7CSJView8FlowDataP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8FlowItemV10parsedDataAA0bE0_pSgvp",
+            "mangledName": "$s7CSJView8FlowItemV10parsedDataAA0bE0_pSgvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CSJView.FlowData)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowData",
+                        "printedName": "any CSJView.FlowData",
+                        "usr": "s:7CSJView8FlowDataP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8FlowItemV10parsedDataAA0bE0_pSgvg",
+                "mangledName": "$s7CSJView8FlowItemV10parsedDataAA0bE0_pSgvg",
+                "moduleName": "CSJView",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flowType",
+            "printedName": "flowType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlowType",
+                "printedName": "CSJView.FlowType",
+                "usr": "s:7CSJView8FlowTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8FlowItemV8flowTypeAA0bE0Ovp",
+            "mangledName": "$s7CSJView8FlowItemV8flowTypeAA0bE0Ovp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8FlowItemV8flowTypeAA0bE0Ovg",
+                "mangledName": "$s7CSJView8FlowItemV8flowTypeAA0bE0Ovg",
+                "moduleName": "CSJView",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlowItem",
+                "printedName": "CSJView.FlowItem",
+                "usr": "s:7CSJView8FlowItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView8FlowItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView8FlowItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView8FlowItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView8FlowItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView8FlowItemV",
+        "mangledName": "$s7CSJView8FlowItemV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlowType",
+        "printedName": "FlowType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "evaluate",
+            "printedName": "evaluate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CSJView.FlowType.Type) -> CSJView.FlowType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CSJView.FlowType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowType",
+                        "printedName": "CSJView.FlowType",
+                        "usr": "s:7CSJView8FlowTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7CSJView8FlowTypeO8evaluateyA2CmF",
+            "mangledName": "$s7CSJView8FlowTypeO8evaluateyA2CmF",
+            "moduleName": "CSJView"
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CSJView.FlowType.Type) -> CSJView.FlowType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CSJView.FlowType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowType",
+                        "printedName": "CSJView.FlowType",
+                        "usr": "s:7CSJView8FlowTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7CSJView8FlowTypeO7messageyA2CmF",
+            "mangledName": "$s7CSJView8FlowTypeO7messageyA2CmF",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ad",
+            "printedName": "ad",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CSJView.FlowType.Type) -> CSJView.FlowType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CSJView.FlowType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowType",
+                        "printedName": "CSJView.FlowType",
+                        "usr": "s:7CSJView8FlowTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7CSJView8FlowTypeO2adyA2CmF",
+            "mangledName": "$s7CSJView8FlowTypeO2adyA2CmF",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "task",
+            "printedName": "task",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CSJView.FlowType.Type) -> CSJView.FlowType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CSJView.FlowType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowType",
+                        "printedName": "CSJView.FlowType",
+                        "usr": "s:7CSJView8FlowTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7CSJView8FlowTypeO4taskyA2CmF",
+            "mangledName": "$s7CSJView8FlowTypeO4taskyA2CmF",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jump",
+            "printedName": "jump",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CSJView.FlowType.Type) -> CSJView.FlowType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CSJView.FlowType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowType",
+                        "printedName": "CSJView.FlowType",
+                        "usr": "s:7CSJView8FlowTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7CSJView8FlowTypeO4jumpyA2CmF",
+            "mangledName": "$s7CSJView8FlowTypeO4jumpyA2CmF",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CSJView.FlowType.Type) -> CSJView.FlowType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CSJView.FlowType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlowType",
+                        "printedName": "CSJView.FlowType",
+                        "usr": "s:7CSJView8FlowTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7CSJView8FlowTypeO7unknownyA2CmF",
+            "mangledName": "$s7CSJView8FlowTypeO7unknownyA2CmF",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CSJView.FlowType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowType",
+                    "printedName": "CSJView.FlowType",
+                    "usr": "s:7CSJView8FlowTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView8FlowTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7CSJView8FlowTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8FlowTypeO8rawValueSSvp",
+            "mangledName": "$s7CSJView8FlowTypeO8rawValueSSvp",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8FlowTypeO8rawValueSSvg",
+                "mangledName": "$s7CSJView8FlowTypeO8rawValueSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7CSJView8FlowTypeO",
+        "mangledName": "$s7CSJView8FlowTypeO",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JumpData",
+        "printedName": "JumpData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "link",
+            "printedName": "link",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8JumpDataV4linkSSvp",
+            "mangledName": "$s7CSJView8JumpDataV4linkSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8JumpDataV4linkSSvg",
+                "mangledName": "$s7CSJView8JumpDataV4linkSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLock",
+            "printedName": "isLock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8JumpDataV6isLockSbvp",
+            "mangledName": "$s7CSJView8JumpDataV6isLockSbvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8JumpDataV6isLockSbvg",
+                "mangledName": "$s7CSJView8JumpDataV6isLockSbvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8JumpDataV5titleSSvp",
+            "mangledName": "$s7CSJView8JumpDataV5titleSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8JumpDataV5titleSSvg",
+                "mangledName": "$s7CSJView8JumpDataV5titleSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8JumpDataV7messageSSvp",
+            "mangledName": "$s7CSJView8JumpDataV7messageSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8JumpDataV7messageSSvg",
+                "mangledName": "$s7CSJView8JumpDataV7messageSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "button",
+            "printedName": "button",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView8JumpDataV6buttonSSvp",
+            "mangledName": "$s7CSJView8JumpDataV6buttonSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView8JumpDataV6buttonSSvg",
+                "mangledName": "$s7CSJView8JumpDataV6buttonSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JumpData",
+                "printedName": "CSJView.JumpData",
+                "usr": "s:7CSJView8JumpDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView8JumpDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView8JumpDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView8JumpDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView8JumpDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView8JumpDataV",
+        "mangledName": "$s7CSJView8JumpDataV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FlowData",
+            "printedName": "FlowData",
+            "usr": "s:7CSJView8FlowDataP",
+            "mangledName": "$s7CSJView8FlowDataP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MessageData",
+        "printedName": "MessageData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView11MessageDataV5titleSSvp",
+            "mangledName": "$s7CSJView11MessageDataV5titleSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView11MessageDataV5titleSSvg",
+                "mangledName": "$s7CSJView11MessageDataV5titleSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView11MessageDataV7messageSSvp",
+            "mangledName": "$s7CSJView11MessageDataV7messageSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView11MessageDataV7messageSSvg",
+                "mangledName": "$s7CSJView11MessageDataV7messageSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView11MessageDataV6cancelSSvp",
+            "mangledName": "$s7CSJView11MessageDataV6cancelSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView11MessageDataV6cancelSSvg",
+                "mangledName": "$s7CSJView11MessageDataV6cancelSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirm",
+            "printedName": "confirm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView11MessageDataV7confirmSSvp",
+            "mangledName": "$s7CSJView11MessageDataV7confirmSSvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView11MessageDataV7confirmSSvg",
+                "mangledName": "$s7CSJView11MessageDataV7confirmSSvg",
+                "moduleName": "CSJView",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MessageData",
+                "printedName": "CSJView.MessageData",
+                "usr": "s:7CSJView11MessageDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView11MessageDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7CSJView11MessageDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJView11MessageDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7CSJView11MessageDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CSJView",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView11MessageDataV",
+        "mangledName": "$s7CSJView11MessageDataV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FlowData",
+            "printedName": "FlowData",
+            "usr": "s:7CSJView8FlowDataP",
+            "mangledName": "$s7CSJView8FlowDataP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdShowView",
+        "printedName": "AdShowView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configUrl:onComplete:loadingView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdShowView",
+                "printedName": "CSJView.AdShowView<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:7CSJView10AdShowViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7CSJView10AdShowViewV9configUrl10onComplete07loadingD0ACyxGSS_ySbcxyctcfc",
+            "mangledName": "$s7CSJView10AdShowViewV9configUrl10onComplete07loadingD0ACyxGSS_ySbcxyctcfc",
+            "moduleName": "CSJView",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJView10AdShowViewV4bodyQrvp",
+            "mangledName": "$s7CSJView10AdShowViewV4bodyQrvp",
+            "moduleName": "CSJView",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJView10AdShowViewV4bodyQrvg",
+                "mangledName": "$s7CSJView10AdShowViewV4bodyQrvg",
+                "moduleName": "CSJView",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJView10AdShowViewV",
+        "mangledName": "$s7CSJView10AdShowViewV",
+        "moduleName": "CSJView",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CSJView",
+        "printedName": "CSJView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJViewAAV7versionSSvpZ",
+            "mangledName": "$s7CSJViewAAV7versionSSvpZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJViewAAV7versionSSvgZ",
+                "mangledName": "$s7CSJViewAAV7versionSSvgZ",
+                "moduleName": "CSJView",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJViewAAV4nameSSvpZ",
+            "mangledName": "$s7CSJViewAAV4nameSSvpZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJViewAAV4nameSSvgZ",
+                "mangledName": "$s7CSJViewAAV4nameSSvgZ",
+                "moduleName": "CSJView",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7CSJViewAAV11descriptionSSvpZ",
+            "mangledName": "$s7CSJViewAAV11descriptionSSvpZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CSJViewAAV11descriptionSSvgZ",
+                "mangledName": "$s7CSJViewAAV11descriptionSSvgZ",
+                "moduleName": "CSJView",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getFrameworkInfo",
+            "printedName": "getFrameworkInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7CSJViewAAV16getFrameworkInfoSDySSypGyFZ",
+            "mangledName": "$s7CSJViewAAV16getFrameworkInfoSDySSypGyFZ",
+            "moduleName": "CSJView",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7CSJViewAAV",
+        "mangledName": "$s7CSJViewAAV",
+        "moduleName": "CSJView",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdConfigManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 251,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 116,
+      "length": 14,
+      "value": "\"激励视频\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 155,
+      "length": 8,
+      "value": "\"插屏\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 8,
+      "value": "\"开屏\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 658,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Array",
+      "offset": 747,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 929,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 967,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Dictionary",
+      "offset": 1068,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Dictionary",
+      "offset": 1146,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Dictionary",
+      "offset": 1212,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Dictionary",
+      "offset": 1348,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Dictionary",
+      "offset": 1437,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "Dictionary",
+      "offset": 1498,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 299,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 395,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 537,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "StringLiteral",
+      "offset": 678,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 773,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 817,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "Array",
+      "offset": 964,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1032,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/FlowManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1160,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Models\/FlowType.swift",
+      "kind": "StringLiteral",
+      "offset": 52,
+      "length": 3,
+      "value": "\"E\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Models\/FlowType.swift",
+      "kind": "StringLiteral",
+      "offset": 90,
+      "length": 3,
+      "value": "\"M\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Models\/FlowType.swift",
+      "kind": "StringLiteral",
+      "offset": 130,
+      "length": 3,
+      "value": "\"A\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Models\/FlowType.swift",
+      "kind": "StringLiteral",
+      "offset": 171,
+      "length": 3,
+      "value": "\"T\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Models\/FlowType.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 3,
+      "value": "\"J\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Models\/FlowType.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/VIews\/AdShowView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 378,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJView.swift",
+      "kind": "StringLiteral",
+      "offset": 98,
+      "length": 7,
+      "value": "\"1.0.1\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJView.swift",
+      "kind": "StringLiteral",
+      "offset": 161,
+      "length": 9,
+      "value": "\"CSJView\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJView.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 29,
+      "value": "\"穿山甲广告快速接入\""
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/Extensions\/BundleExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}
