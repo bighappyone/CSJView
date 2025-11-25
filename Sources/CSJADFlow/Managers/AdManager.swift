@@ -32,6 +32,7 @@ class AdManager: NSObject, ObservableObject {
     @Published var isLoadingAds = false
     @Published var cachePool: [CachedAd] = []
     
+    private var isInitializing = false  // 防止并发初始化
     private var configManager = AdConfigManager.shared
     
     // 当前加载状态
@@ -55,6 +56,19 @@ class AdManager: NSObject, ObservableObject {
     
     // MARK: - 初始化SDK
     func initializeSDK() {
+        // 检查是否已经初始化
+        if isSDKInitialized {
+            debugPrint("⚠️ [SDK初始化] SDK已经初始化，跳过重复初始化")
+            return
+        }
+        
+        // 检查是否正在初始化中
+        if isInitializing {
+            debugPrint("⚠️ [SDK初始化] SDK正在初始化中，跳过重复调用")
+            return
+        }
+        
+        isInitializing = true
         debugPrint("🔧 [SDK初始化] 开始初始化穿山甲SDK")
         guard let config = configManager.config else {
             debugPrint("❌ [SDK初始化] 配置未加载")
@@ -68,7 +82,7 @@ class AdManager: NSObject, ObservableObject {
         
         // 详细的初始化参数日志
         debugPrint("📋 [SDK初始化] 配置参数:")
-        debugPrint("   App ID: \(config.appId)")
+        debugPrint("   App ID: \(config.appId) \(Bundle.main.bundleIdentifier)")
         debugPrint("   Use Mediation: false")
         debugPrint("   Debug Log: true")
         
@@ -92,6 +106,8 @@ class AdManager: NSObject, ObservableObject {
             // 不要尝试在SDK内部设置断点，因为SDK是二进制框架
             let elapsedTime = Date().timeIntervalSince(startTime)
             DispatchQueue.main.async {
+                self?.isInitializing = false  // 重置初始化标志
+                
                 if success {
                     debugPrint("✅ [SDK初始化] 初始化成功 (耗时: \(String(format: "%.2f", elapsedTime))秒)")
                     self?.isSDKInitialized = true

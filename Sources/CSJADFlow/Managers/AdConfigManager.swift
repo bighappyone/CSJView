@@ -12,9 +12,16 @@ class AdConfigManager: ObservableObject {
     
     /// 从JSON文件加载配置
     func initConfig(_ config: AdConfig) {
+        // 检查是否已经初始化过配置
+        if isInit {
+            debugPrint("⚠️ [配置管理] 配置已经初始化，跳过重复初始化")
+            return
+        }
+        
         errorMessage = nil
         
         self.config = config
+        self.isInit = true
         
         debugPrint("✅ 配置加载成功")
         printConfigInfo()

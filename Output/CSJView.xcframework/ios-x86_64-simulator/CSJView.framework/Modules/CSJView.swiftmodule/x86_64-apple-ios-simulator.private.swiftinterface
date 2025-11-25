@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import BUAdSDK
 import Foundation
+import ObjectiveC
 import Swift
 import SwiftUI
 import UIKit
@@ -119,12 +120,6 @@ public struct MessageData : CSJView.FlowData {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s7CSJView10AdShowViewV4bodyQrvp", 0) __<Content>
-}
-public struct CSJView {
-  public static let version: Swift.String
-  public static let name: Swift.String
-  public static let description: Swift.String
-  public static func getFrameworkInfo() -> [Swift.String : Any]
 }
 extension CSJView.FlowType : Swift.Equatable {}
 extension CSJView.FlowType : Swift.Hashable {}

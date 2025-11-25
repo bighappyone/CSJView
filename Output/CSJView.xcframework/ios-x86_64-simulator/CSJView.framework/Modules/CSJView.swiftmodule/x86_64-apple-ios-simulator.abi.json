@@ -3834,219 +3834,9 @@
         "moduleName": "CSJView"
       },
       {
-        "kind": "TypeDecl",
-        "name": "CSJView",
-        "printedName": "CSJView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "version",
-            "printedName": "version",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7CSJViewAAV7versionSSvpZ",
-            "mangledName": "$s7CSJViewAAV7versionSSvpZ",
-            "moduleName": "CSJView",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7CSJViewAAV7versionSSvgZ",
-                "mangledName": "$s7CSJViewAAV7versionSSvgZ",
-                "moduleName": "CSJView",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7CSJViewAAV4nameSSvpZ",
-            "mangledName": "$s7CSJViewAAV4nameSSvpZ",
-            "moduleName": "CSJView",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7CSJViewAAV4nameSSvgZ",
-                "mangledName": "$s7CSJViewAAV4nameSSvgZ",
-                "moduleName": "CSJView",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7CSJViewAAV11descriptionSSvpZ",
-            "mangledName": "$s7CSJViewAAV11descriptionSSvpZ",
-            "moduleName": "CSJView",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7CSJViewAAV11descriptionSSvgZ",
-                "mangledName": "$s7CSJViewAAV11descriptionSSvgZ",
-                "moduleName": "CSJView",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "getFrameworkInfo",
-            "printedName": "getFrameworkInfo()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7CSJViewAAV16getFrameworkInfoSDySSypGyFZ",
-            "mangledName": "$s7CSJViewAAV16getFrameworkInfoSDySSypGyFZ",
-            "moduleName": "CSJView",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7CSJViewAAV",
-        "mangledName": "$s7CSJViewAAV",
-        "moduleName": "CSJView",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
         "declKind": "Import",
         "moduleName": "CSJView"
       }
@@ -4105,57 +3895,64 @@
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 788,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
+      "offset": 994,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 967,
+      "offset": 1032,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "Dictionary",
-      "offset": 1068,
+      "offset": 1133,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "Dictionary",
-      "offset": 1146,
+      "offset": 1211,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "Dictionary",
-      "offset": 1212,
+      "offset": 1277,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "Dictionary",
-      "offset": 1348,
+      "offset": 1413,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "Dictionary",
-      "offset": 1437,
+      "offset": 1502,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJADFlow\/Managers\/AdManager.swift",
       "kind": "Dictionary",
-      "offset": 1498,
+      "offset": 1563,
       "length": 3,
       "value": "[]"
     },
@@ -4307,30 +4104,9 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJView.swift",
-      "kind": "StringLiteral",
-      "offset": 98,
-      "length": 7,
-      "value": "\"1.0.1\""
-    },
-    {
-      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJView.swift",
-      "kind": "StringLiteral",
-      "offset": 161,
-      "length": 9,
-      "value": "\"CSJView\""
-    },
-    {
-      "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/CSJView.swift",
-      "kind": "StringLiteral",
-      "offset": 233,
-      "length": 29,
-      "value": "\"穿山甲广告快速接入\""
-    },
-    {
       "filePath": "\/Users\/jietan\/Desktop\/代码\/Tanjie\/CSJView\/Sources\/Extensions\/BundleExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 83,
+      "offset": 101,
       "length": 1,
       "value": "0"
     }
