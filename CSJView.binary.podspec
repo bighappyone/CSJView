@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CSJView"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Ads-CN wrapper for Pangle ads display"
   s.description  = <<-DESC
   CSJView is a Swift SDK that wraps Ads-CN (Pangle) for easy integration of advertising features.
