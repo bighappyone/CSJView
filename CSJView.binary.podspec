@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CSJView"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "Ads-CN wrapper for Pangle ads display"
   s.description  = <<-DESC
   CSJView is a Swift SDK that wraps Ads-CN (Pangle) for easy integration of advertising features.
@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
   # 二进制版本不依赖 Ads-CN，所有依赖已包含在框架内
 
   s.swift_versions = ["5.0", "5.5", "6.0"]
-  s.static_framework = true  # 静态框架
+  # 注意：框架是动态框架，不需要设置 static_framework
+  # 动态框架会被 CocoaPods 正确嵌入到应用中
   
   # 确保使用模块
   s.module_name = "CSJView"

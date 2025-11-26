@@ -3835,6 +3835,13 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CSJView"
+      },
+      {
+        "kind": "Import",
         "name": "ObjectiveC",
         "printedName": "ObjectiveC",
         "declKind": "Import",

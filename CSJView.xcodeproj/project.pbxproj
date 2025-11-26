@@ -22,6 +22,7 @@
 		9B0B18C5CE0CBBA79125AAFE /* AnalyticsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC796156E9933025788C39 /* AnalyticsInterface.swift */; };
 		B02B0A11FE26114B66B5F631 /* Pods_CSJView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D29700282E174C35EFD4D5 /* Pods_CSJView.framework */; };
 		C8E15064DC0C317DBBC269DA /* AdConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A677E48D9310255977D5DE /* AdConfigManager.swift */; };
+        8BB0E8972ED6C0290066E24B /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0E8962ED6C0290066E24A /* TextExtension.swift */; };
 		D0449F776668E9AE9C86CD37 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64D366A84BA15AACE2649 /* BundleExtension.swift */; };
 		DAD9A82E674411709FC85ACD /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BC9219F0003E4619EDBBFE /* MessageData.swift */; };
 		DE09E39E054FCACE7F9CD758 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1F15917C38C4421F85A41 /* AdManager.swift */; };
@@ -31,7 +32,8 @@
 
 /* Begin PBXFileReference section */
 		06D29700282E174C35EFD4D5 /* Pods_CSJView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSJView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08D64D366A84BA15AACE2649 /* BundleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleExtension.swift; path = Sources/Extensions/BundleExtension.swift; sourceTree = "<group>"; };
+        08D64D366A84BA15AACE2649 /* BundleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleExtension.swift; path = Sources/Extensions/BundleExtension.swift; sourceTree = "<group>"; };
+        8BB0E8962ED6C0290066E24A /* TextExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextExtension.swift; path = Sources/Extensions/TextExtension.swift; sourceTree = "<group>"; };
 		0CCB0ACD0F6D7697C6D0463F /* FlowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowType.swift; path = Sources/CSJADFlow/Models/FlowType.swift; sourceTree = "<group>"; };
 		0F454367FC8550027B7A3FA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		149E84BA6A97EE3C5B710EC2 /* FlowItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowItem.swift; path = Sources/CSJADFlow/Models/FlowItem.swift; sourceTree = "<group>"; };
@@ -91,7 +93,6 @@
 				DE12C52C7704F747841B47A3 /* Pods-CSJView.release.xcconfig */,
 				518ACA9E69DE5C1A7E004048 /* Pods-CSJView.debug.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,7 +124,9 @@
 				A9BC9219F0003E4619EDBBFE /* MessageData.swift */,
 				5DD5FCC5DEC4051E5D8931B6 /* AdShowView.swift */,
 				9B32F77421D485CCF56D2797 /* CSJInterface.swift */,
-				08D64D366A84BA15AACE2649 /* BundleExtension.swift */,
+				E8B0E8962ED6C0290066E24C /* Extensions */,
+                08D64D366A84BA15AACE2649 /* BundleExtension.swift */,
+                8BB0E8962ED6C0290066E24A /* TextExtension.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -189,8 +192,6 @@
 				Base,
 			);
 			mainGroup = E39FD42950E519C9BC06F627;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = BA1EA44789B4FAC7C6946E24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,6 +280,7 @@
 				DAD9A82E674411709FC85ACD /* MessageData.swift in Sources */,
 				0452972C96DB452C99243C2C /* AdShowView.swift in Sources */,
 				E924EA5610E68EC567BB10A9 /* CSJInterface.swift in Sources */,
+				8BB0E8972ED6C0290066E24B /* TextExtension.swift in Sources */,
 				D0449F776668E9AE9C86CD37 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,8 +428,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
