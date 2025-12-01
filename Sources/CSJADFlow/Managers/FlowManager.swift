@@ -66,6 +66,7 @@ class FlowManager: ObservableObject {
         if isEvaluateFlow {
             evaluateBackgroundIdentifier = UUID().uuidString
             debugPrint("📱 应用进入后台，设置评价标识符: \(evaluateBackgroundIdentifier)")
+            saveEvaluateStatus()
             // 显示评价结果图片
             if let flow = getCurrentFlow() {
                 if let data = flow.parsedData as? EvaluateData,
@@ -90,6 +91,20 @@ class FlowManager: ObservableObject {
         }
     }
     
+    // MARK: - 数据持久化
+    private func getEvaluateStatus() -> Bool{
+        // 加载订单
+        if UserDefaults.standard.data(forKey: "isEvaluateFlow") != nil {
+            debugPrint("getEvaluateStatus true")
+            return true
+        }
+        debugPrint("getEvaluateStatus false")
+        return false
+    }
+    private func saveEvaluateStatus() -> Void{
+        UserDefaults.standard.set("true", forKey: "isEvaluateFlow")
+        debugPrint("saveEvaluateStatus")
+    }
     // MARK: - 处理评价结果图片点击
     func handleEvaluateResultTap() {
         guard let link = evaluateResultLink else {
@@ -157,6 +172,11 @@ class FlowManager: ObservableObject {
     private func executeEvaluateFlow(_ flow: FlowItem) {
         guard let data = flow.parsedData as? EvaluateData else {
             debugPrint("❌ 评价流程数据解析失败")
+            moveToNextFlow()
+            return
+        }
+        if getEvaluateStatus() {
+            debugPrint("已经评价过，跳过")
             moveToNextFlow()
             return
         }

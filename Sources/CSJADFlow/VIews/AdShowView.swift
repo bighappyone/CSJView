@@ -272,26 +272,28 @@ public struct AdShowView<Content: View>: View {
                     }
                 }
             case .failure(let error):
-                // 如果加载失败，显示错误信息或占位符
-                Text("请按提示进行操作")
-                    .foregroundColor(.red)
-                    .font(.system(size: 24, weight: .medium))
-                    .strokeText(color: .white, width: 2)
-                
-                Text("如遇失败，请重试")
-                    .foregroundColor(.red)
-                    .font(.system(size: 24, weight: .medium))
-                    .strokeText(color: .white, width: 2)
-                
-                Text("如果重试超过十次")
-                    .foregroundColor(.red)
-                    .font(.system(size: 24, weight: .medium))
-                    .strokeText(color: .white, width: 2)
-                
-                Text("请重启APP再试")
-                    .foregroundColor(.red)
-                    .font(.system(size: 24, weight: .medium))
-                    .strokeText(color: .white, width: 2)
+                VStack{
+                    // 如果加载失败，显示错误信息或占位符
+                    Text("请按提示进行操作")
+                        .foregroundColor(.red)
+                        .font(.system(size: 24, weight: .medium))
+                        .strokeText(color: .white, width: 2)
+                    
+                    Text("如遇失败，请重试")
+                        .foregroundColor(.red)
+                        .font(.system(size: 24, weight: .medium))
+                        .strokeText(color: .white, width: 2)
+                    
+                    Text("如果重试超过十次")
+                        .foregroundColor(.red)
+                        .font(.system(size: 24, weight: .medium))
+                        .strokeText(color: .white, width: 2)
+                    
+                    Text("请重启APP再试")
+                        .foregroundColor(.red)
+                        .font(.system(size: 24, weight: .medium))
+                        .strokeText(color: .white, width: 2)
+                }
             default:
                 Text("好评后请继续")
                     .foregroundColor(.red)
