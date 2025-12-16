@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CSJView"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "Ads-CN wrapper for Pangle ads display"
   s.description  = <<-DESC
   CSJView is a Swift SDK that wraps Ads-CN (Pangle) for easy integration of advertising features.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/bighappyone/CSJView.git", :tag => s.version }
 
   # 二进制分发配置
-  # 注意：二进制框架已经包含了所有依赖（Ads-CN、BUTTSDKFramework等），不需要额外声明依赖
+  # 注意：二进制框架已经包含了所有依赖（Ads-CN[7.2.1.7]、BUTTSDKFramework[1.46.2.7-premium]、GMKsAdapter[4.9.20.1.2]等），不需要额外声明依赖
   # 需要将 xcframework 提交到 Git 仓库（建议使用 Git LFS）
   s.vendored_frameworks = "Output/CSJView.xcframework"
   s.preserve_paths = "Output/CSJView.xcframework"

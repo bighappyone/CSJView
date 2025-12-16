@@ -2,6 +2,8 @@
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CSJView
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AdSupport
+import AppTrackingTransparency
 import BUAdSDK
 import Foundation
 import ObjectiveC
@@ -11,6 +13,15 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor public class ResourceBundleHelper {
+  @_Concurrency.MainActor public static let shared: CSJView.ResourceBundleHelper
+  @_Concurrency.MainActor public func findCSJAdSDKBundle() -> Foundation.Bundle?
+  @_Concurrency.MainActor public func findVeLiveBundle() -> Foundation.Bundle?
+  @_Concurrency.MainActor public func findTTPlayerMetallib() -> Foundation.URL?
+  @_Concurrency.MainActor public func validateResources() -> Swift.Bool
+  @_Concurrency.MainActor public func getResourceLoadingHint() -> Swift.String
+  @objc deinit
+}
 public protocol AnalyticsInterface {
   func initConfig(_ key: Swift.String?)
   func event(_ event: Swift.String)
@@ -27,12 +38,20 @@ public struct AdConfig : Swift.Codable {
   public let umKey: Swift.String?
   public let bId: Swift.String?
   public let appId: Swift.String
+  public let useMediation: Swift.Bool?
   public let rewardSlotId: [Swift.String]
   public let splashSlotId: [Swift.String]
   public let interstitialSlotId: [Swift.String]
   public let isEnable: Swift.Bool
   public let cacheLength: Swift.Int
   public let flows: [CSJView.FlowItem]
+  public let rewardPrize: [Swift.String : CSJView.RewardPrizeConfig]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RewardPrizeConfig : Swift.Codable {
+  public let prize: Swift.String
+  public let amount: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -111,16 +130,19 @@ public struct MessageData : CSJView.FlowData {
   public let message: Swift.String
   public let cancel: Swift.String
   public let confirm: Swift.String
+  public let confirmUrl: Swift.String?
+  public let cancelUrl: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 @_Concurrency.MainActor @preconcurrency public struct AdShowView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(configUrl: Swift.String, onComplete: @escaping (Swift.Bool) -> Swift.Void, loadingView: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public init(appId: Swift.String, configUrl: Swift.String, onComplete: @escaping (Swift.Bool) -> Swift.Void, loadingView: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s7CSJView10AdShowViewV4bodyQrvp", 0) __<Content>
 }
+extension CSJView.ResourceBundleHelper : Swift.Sendable {}
 extension CSJView.FlowType : Swift.Equatable {}
 extension CSJView.FlowType : Swift.Hashable {}
 extension CSJView.FlowType : Swift.RawRepresentable {}
